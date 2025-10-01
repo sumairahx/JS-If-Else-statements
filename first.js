@@ -136,7 +136,7 @@ if (age >= 60) {
 
 { var name = prompt("enter your name");
     console.log(name);
-if (name === Alice ){
+if (name === " Alice" ){
     console.log("Hi, Alice!");
 } else {
     console.log("you're not Alice!");
@@ -192,4 +192,86 @@ if (game === "yes") {
 
 // Ask the user for a color. If the color is "blue", log "Cool choice!"; else log
 // "Interesting color!"
+
+{ var color = prompt("enter your favorite color");
+console.log(color);
+if (color === "blue") {
+    console.log("cool choice!");
+} else {
+    console.log("interesting color!");
+}
+}
+
+// Ask for the day of the week. If it’s "Sunday", alert "Weekend!"; else alert "Weekday".
+
+ { var day = prompt("enter a day");
+console.log(day);
+if (day === "sunday") {
+    console.log("weekend!");
+} else {
+    console.log("weekday.");
+}
+ }
+
+//  Ask the user to enter a fruit. If it's "banana" or "apple", alert "We have that!";
+// else alert "Sorry, out of stock."
+
+{ var fruit = prompt("enter a fruit");
+console.log(fruit);
+if (fruit === "banana " || fruit === "apple" ) {
+    console.log("we have that!");
+} else {
+    console.log("sorry, out of stock.");
+}
+}
+
+// Ask the user to type "start" to begin. If they do, alert "Game started!"; else alert
+// "Waiting for input..."
+
+{ var input = prompt("type start to begin");
+console.log(input);
+if (input === "start") {
+    console.log("game started!");
+} else {
+    console.log("waiting for input...");
+}
+}
+
+
+// Age-Based Grade Check
+
+{ var marks = prompt("enter your marks!");
+console.log(marks);
+if (marks >= 80 && marks <=100) {
+    console.log("distinction");
+} else if ( marks >= 50 && marks < 80) {
+    console.log("pass");
+} else if (marks >= 0 && marks < 50) {
+    console.log("fail");
+} else {
+    console.log("invalid marks!!!");
+}
+}
+
+// Discount Eligibility Based on Age and Membership
+
+{ var age = prompt("enter your age!");
+console.log(age);
+if ( age >= 60) {
+    console.log("Senior Premium Discount");
+} else if (age < 60 && age > 30) {
+    console.log("premium discount");
+} else if ( age > 18 && age < 20 ) {
+    console.log("student discount");
+} else {
+    console.log("No discount");
+}
+}
+
+// Login and Email Verification
+
+{ 
+}
+
+
 
