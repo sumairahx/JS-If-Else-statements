@@ -270,8 +270,212 @@ if ( age >= 60) {
 
 // Login and Email Verification
 
-{ 
+{ var isLoggedIN = prompt("Are you logged in? (yes/no)") === "yes";
+ var isEmailVerified = prompt("Is your email verified? (yes/no)") === "yes";
+ if (isLoggedIN && isEmailVerified) {
+        console.log("Access granted");
+ } else if (isLoggedIN && !isEmailVerified) {
+        console.log("Please verify your email");
+} else {
+    console.log("Please log in")
+}
 }
 
+// Contest Eligibility
 
+{ var age = prompt("enter your age");
+    var country = prompt("enter your country");
+    var isBanned = prompt("are you banned? (yes/no)") === "yes";
+    if (age < 18 || age > 35) {
+        console.log("not eligible due to age");
+    } else if (country !== "pakistan" && country !== "india") {
+        console.log (" not eligible due to region");
+    } else if (isBanned) {
+        console.log("not eligible as you are banned");
+    } else {
+        console.log("eligible for the contest")
+    }
+}
 
+// Subscription Access Check
+{ var plan = prompt("enter your plan (premium/free)");
+    var LoggedIN = prompt("are you logged in? (yes/no)") === "yes";
+    if (LoggedIN) { 
+        if (plan === "premium") {
+             console.log("Welcome Premium User");
+         } else if (plan === "free") {
+            console.log("Welcome Free User");
+         } else if (!LoggedIN ) {
+            console.log("Please log in to continue");
+         } else {
+            console.log("Invalid subscription");
+         }
+
+}
+}
+
+// Product Purchase Validation
+
+{ var price = prompt("Enter product price:");
+var stock = prompt("Enter product stock:");
+var userIsMember = prompt("Are you a member? (yes/no)") === "yes";
+
+if (stock === 0) {
+  console.log("Out of stock");
+} else if (price > 1000 && userIsMember) {
+  console.log("Buy now with discount");
+} else if (stock > 0) {
+  console.log("Buy now");
+} else {
+  console.log("Invalid product");
+}
+}
+
+// Work Hours Check
+
+{ var hoursWorked = prompt("Enter hours worked:");
+var isWeekend = prompt("Is it weekend? (yes/no)") === "yes";
+
+if (hoursWorked === 0) {
+  console.log("No work");
+} else if (hoursWorked > 0 && isWeekend) {
+  console.log("Weekend work");
+} else if (hoursWorked >= 40 && !isWeekend) {
+  console.log("Overtime");
+} else {
+  console.log("Regular hours");
+}
+}
+
+// Age and Gender Classification
+
+ { var age = prompt("Enter age:");
+var gender = prompt("Enter gender (male/female):");
+
+if (age < 13) {
+  console.log("Child");
+} else if (age >= 13 && age <= 19) {
+  if (gender === "male") {
+    console.log("Teen Male");
+  } else if (gender === "female") {
+    console.log("Teen Female");
+  }
+} else {
+  console.log("Adult");
+}
+ }
+
+//  Weather Warning System
+
+{ var temp = prompt("Enter temperature:");
+var humidity = prompt("Enter humidity:");
+
+if (temp >= 40 && humidity >= 60) {
+  console.log("Heatwave Alert");
+} else if (temp >= 40 && humidity < 60) {
+  console.log("Hot and Dry");
+} else if (temp <= 20) {
+  console.log("Cool Weather");
+} else {
+  console.log("Moderate");
+}
+}
+
+// Score Grading System
+
+{ var score = prompt("Enter score (0-100):");
+
+if (score < 0 || score > 100) {
+  console.log("Invalid Score");
+} else if (score >= 90) {
+  console.log("Excellent");
+} else if (score >= 70) {
+  console.log("Good");
+} else if (score >= 50) {
+  console.log("Average");
+} else if (score >= 30) {
+  console.log("Poor");
+} else {
+  console.log("Fail");
+} 
+}
+
+// Course Access Control
+
+{ var loggedIn = prompt("Are you logged in? (yes/no)") === "yes";
+var enrolled = prompt("Are you enrolled? (yes/no)") === "yes";
+var banned = prompt("Are you banned? (yes/no)") === "yes";
+
+if (!loggedIn) {
+  console.log("Please log in");
+} else if (!enrolled) {
+  console.log("Enroll in course first");
+} else if (banned) {
+  console.log("User is banned");
+} else {
+  console.log("Access granted");
+}
+ }
+
+//  Driving Conditions
+
+{ var speed = prompt("Enter your speed:");
+var hasLicense = prompt("Do you have a license? (yes/no)") === "yes";
+
+if (!hasLicense) {
+  console.log("Driving without license");
+} else if (speed > 120) {
+  console.log("License suspended");
+} else if (speed > 100 && speed <= 120) {
+  console.log("Warning");
+} else {
+  console.log("Normal driving");
+}
+}
+
+// Order Processing Status
+
+{ var paymentComplete = true;
+var shipped = true;
+var paymentPending = false;
+var transactionFailed = false;
+
+if (paymentComplete && shipped) {
+  console.log("Order on the way");
+} else if (paymentComplete && !shipped) {
+  console.log("Preparing your order");
+} else if (paymentPending) {
+  console.log("Awaiting payment");
+} else if (transactionFailed) {
+  console.log("Payment failed");
+}
+}
+
+// Battery Status Checker
+
+{ var level = prompt("enter your bettery level");
+var charging = true; 
+if (level === 100) {
+  console.log("Fully Charged");
+} else if (level < 100 && charging) {
+  console.log("Charging");
+} else if (level < 20 && !charging) {
+  console.log("Low Battery");
+} else {
+  console.log("Battery OK");
+}
+}
+
+// Browser and Device Compatibility Check
+
+{ var browser = prompt("enter the browser name");
+var device = prompt("enter device name");
+
+if (browser === "Chrome" && device === "Desktop") {
+  console.log("Full features enabled");
+} else if (browser === "Chrome" && device === "Mobile") {
+  console.log("Limited mobile features");
+} else {
+  console.log("Please switch to Chrome");
+}
+}
