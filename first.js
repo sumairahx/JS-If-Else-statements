@@ -479,3 +479,85 @@ if (browser === "Chrome" && device === "Desktop") {
   console.log("Please switch to Chrome");
 }
 }
+
+// python questions
+
+// Speed Limit Warning
+
+{ var speed = prompt("Enter your speed:");
+
+if (speed < 30) {
+  console.log("Too slow");
+} else if (speed >= 30 && speed <= 60) {
+  console.log("Safe speed");
+} else if (speed >= 61 && speed <= 100) {
+  console.log("Speeding");
+} else {
+  console.log("Dangerously fast");
+}
+}
+
+// Library Book Return Fine
+
+{ var lateDays = prompt("Enter number of late days:");
+var fine = 0;
+
+if (lateDays >= 1 && lateDays <= 5) {
+  fine = lateDays * 1;
+} else if (lateDays >= 6 && lateDays <= 10) {
+  fine = lateDays * 2;
+} else if (lateDays >= 11) {
+  fine = lateDays * 5;
+}
+console.log(fine);
+}
+
+// Event Entry Eligibility
+
+{ var age = prompt("Enter your age:");
+let hasTicket = prompt("Do you have a valid ticket? (yes/no)") === "yes";
+
+if (age >= 18 && hasTicket) {
+  console.log("Entry allowed");
+} else {
+  console.log("Entry denied");
+}
+}
+
+// Smartphone Battery Status
+
+{ var batteryLevel = prompt("Enter battery level (0-100):");
+
+if (batteryLevel >= 100) {
+  console.log("Battery full");
+} else if (batteryLevel >= 50 && batteryLevel < 79) {
+  console.log("Battery good");
+} else if (batteryLevel >= 20 && batteryLevel < 49) {
+  console.log("Battery low");
+} else {
+  console.log("charge now!");
+}
+}
+
+// Discount Eligibility
+
+{ var customerType = prompt("Enter customer type (Student/Senior/Others):");
+var age = prompt("Enter your age:");
+
+var discount = 0;
+if (customerType === "student") {
+  discount = 20;
+} else if (customerType === "senior" || age >= 60) {
+  discount = 30;
+} else {
+  discount = 0;
+}
+
+console.log(Discount);
+}
+
+// Clothing Recommendation
+
+
+
+
