@@ -553,3 +553,86 @@ if (temperature < 10) {
 }
 }
 
+// Discount Eligibility
+
+{ var type = prompt("Enter your customer type (student,senior,others):")
+var age = prompt("Enter your age:")
+var discount = 0;
+age = Number(age);
+
+if(type === "student"){
+    discount = 20;
+}else if(type === "senior" && age >= 60){
+    discount = 30;
+}else {
+    discount = 0;
+}
+console.log("Your discount:" + discount + "%");
+}
+
+// Water Intake Reminder
+
+{ var level = prompt("Enter your water intake level (sedentary, moderate ,active:");
+var water = " ";
+if (level === "sedentary"){
+    water = "2L water";
+}else if(level === "moderate"){
+    water = "2.5L water"
+}else if(level === "active"){
+    water = "3L or more"
+}else {
+    water = "Invalid input"
+}
+console.log("Water intake:" + water);
+}
+
+// Exam Result Evaluation
+
+{ var sub1 = prompt("Enter your first subject 1:");
+var sub2 = prompt("Enter your first subject 2:");
+var sub3 = prompt("Enter your first subject 3:");
+var Result =" ";
+
+sub1 = Number(sub1);
+sub2 = Number(sub2);
+sub3 = Number(sub3);
+
+if(sub1 >= 40 &&  sub2 >= 40 &&  sub3 >= 40){
+    Result = "Pass";
+}else {
+    Result = "Fail";
+}
+console.log("Your result" +" " + Result);
+}
+
+// App Theme Selection
+
+{ var time = prompt("Enter your current time (1-24)");
+time = Number(time);
+
+var theme = " ";
+if(time >= 6 && time <= 17){
+    theme = "Light mode"
+}else {
+    theme = "Dark theme"
+}
+console.log("Current time:" + " " + theme);
+}
+
+// Meal Type Identifier
+
+{ var time = prompt("Enter your meal time of the day (0-23)");
+time = Number(time);
+var meal = " ";
+
+if(time >= 6 && time <= 10){
+    meal = "Breakfast"
+}else if(time >= 12 && time <= 14){
+    meal = "Lunch"
+}else if(time >= 18 && time <= 21){
+    meal = "Dinner"
+}else {
+    meal = "Snack"
+}
+console.log("Your Meal time of the day:" + " " + meal);
+}
