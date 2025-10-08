@@ -543,21 +543,54 @@ if (batteryLevel >= 100) {
 
 { var customerType = prompt("Enter customer type (Student/Senior/Others):");
 var age = prompt("Enter your age:");
-
-var discount = 0;
-if (customerType === "student") {
-  discount = 20;
+if (customerType === "student" || age <= 25 ) {
+  console.log = (20);
 } else if (customerType === "senior" || age >= 60) {
-  discount = 30;
+  console.log = (30);
 } else {
-  discount = 0;
+  console.log = (0);
 }
-
-console.log(Discount);
 }
 
 // Clothing Recommendation
 
+{ var temperature = prompt("Enter temperature in °C:");
+if (temperature < 10) {
+  console.log("Heavy jacket");
+} else if (temperature >= 10 && temperature <= 20) {
+  console.log("Sweater");
+} else if (temperature >= 21 && temperature <= 30) {
+  console.log("T-shirt");
+} else {
+  console.log("Light clothes");
+}
+}
 
+// Water Intake Reminder
 
+{ var activityLevel = prompt("enter activity level (sedentary/moderate/active)");
+if (activityLevel === "Sedentary") {
+    console.log = ("2L");
+} else if (activityLevel === "Moderate") {
+    console.log = ("2.5L");
+} else if (activityLevel === "Active") {
+    console.log= ("3L+");
+} else {
+    console.log =("Invalid activity level");
+}
+}
+
+// Exam Result Evaluation
+
+{ var sub1 = prompt("enter your sub1 marks");
+var sub2 = prompt("enter your sub2 marks");
+var sub3 = prompt("enter your sub3 marks");
+var marks =(sub1 + sub2 + sub3)
+console.log(marks);
+if(marks >= 40) {
+  console.log("pass");
+} else {
+  console.log("fail");
+}
+}
 
