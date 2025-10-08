@@ -538,3 +538,18 @@ if (batteryLevel >= 100) {
   console.log("charge now!");
 }
 }
+
+// Clothing Recommendation
+
+{ var temperature = prompt("Enter temperature in °C:");
+if (temperature < 10) {
+  console.log("Heavy jacket");
+} else if (temperature >= 10 && temperature <= 20) {
+  console.log("Sweater");
+} else if (temperature >= 21 && temperature <= 30) {
+  console.log("T-shirt");
+} else {
+  console.log("Light clothes");
+}
+}
+
